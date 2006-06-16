@@ -1,0 +1,158 @@
+gtkglext-x11
+-------------------------------------------
+GtkGLExt is an OpenGL extension to GTK.
+
+This package is composed of GdkGLExt library and GtkGLExt library.
+GdkGLExt library provides the GDK objects which support OpenGL
+rendering in GTK. GtkGLExt library provides the GtkWidget API add-ons
+to make GTK+ widgets OpenGL-capable.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  gtk2-x11-runtime-2.6.10-1
+  pango-runtime-1.8.1-1
+  xorg-x11-bin-dlls-6.8.2.0-1
+
+Build requirements:
+  cygwin-1.5.19-4
+  automake2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gtk-doc-1.3-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  pkgconfig-0.17.2-2
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://gtkglext.sourceforge.net/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/gtkglext/
+  http://prdownloads.sourceforge.net/gtkglext/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gtkglext-x11-1.2.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./gtkglext-1.2.0-X.sh all
+
+This will create:
+  /usr/src/gtkglext-x11-1.2.0-X-src.tar.bz2
+  /usr/src/gtkglext-x11-1.2.0-X.tar.bz2
+  /usr/src/gtkglext-x11-devel-1.2.0-X.tar.bz2
+  /usr/src/gtkglext-x11-doc-1.2.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /usr/bin/cyggdkglext-x11-1.0-0.dll
+  /usr/bin/cyggtkglext-x11-1.0-0.dll
+  /usr/share/doc/Cygwin/gtkglext-x11-1.2.0.README
+  /usr/share/doc/gtkglext-x11-1.2.0/AUTHORS
+  /usr/share/doc/gtkglext-x11-1.2.0/ChangeLog
+  /usr/share/doc/gtkglext-x11-1.2.0/COPYING
+  /usr/share/doc/gtkglext-x11-1.2.0/COPYING.LIB
+  /usr/share/doc/gtkglext-x11-1.2.0/INSTALL
+  /usr/share/doc/gtkglext-x11-1.2.0/NEWS
+  /usr/share/doc/gtkglext-x11-1.2.0/README
+  /usr/share/doc/gtkglext-x11-1.2.0/TODO
+
+Files included in the devel package:
+
+  /usr/include/gtkglext-1.0/gdk/gdkgl.h
+  /usr/include/gtkglext-1.0/gdk/gdkglconfig.h
+  /usr/include/gtkglext-1.0/gdk/gdkglcontext.h
+  /usr/include/gtkglext-1.0/gdk/gdkgldebug.h
+  /usr/include/gtkglext-1.0/gdk/gdkgldefs.h
+  /usr/include/gtkglext-1.0/gdk/gdkgldrawable.h
+  /usr/include/gtkglext-1.0/gdk/gdkglenumtypes.h
+  /usr/include/gtkglext-1.0/gdk/gdkglfont.h
+  /usr/include/gtkglext-1.0/gdk/gdkglglext.h
+  /usr/include/gtkglext-1.0/gdk/gdkglinit.h
+  /usr/include/gtkglext-1.0/gdk/gdkglpixmap.h
+  /usr/include/gtkglext-1.0/gdk/gdkglquery.h
+  /usr/include/gtkglext-1.0/gdk/gdkglshapes.h
+  /usr/include/gtkglext-1.0/gdk/gdkgltokens.h
+  /usr/include/gtkglext-1.0/gdk/gdkgltypes.h
+  /usr/include/gtkglext-1.0/gdk/gdkglversion.h
+  /usr/include/gtkglext-1.0/gdk/gdkglwindow.h
+  /usr/include/gtkglext-1.0/gdk/glext/glext-extra.h
+  /usr/include/gtkglext-1.0/gdk/glext/glext.h
+  /usr/include/gtkglext-1.0/gdk/glext/glxext-extra.h
+  /usr/include/gtkglext-1.0/gdk/glext/glxext.h
+  /usr/include/gtkglext-1.0/gdk/glext/wglext-extra.h
+  /usr/include/gtkglext-1.0/gdk/glext/wglext.h
+  /usr/include/gtkglext-1.0/gdk/x11/gdkglglxext.h
+  /usr/include/gtkglext-1.0/gdk/x11/gdkglx.h
+  /usr/include/gtkglext-1.0/gtk/gtkgl.h
+  /usr/include/gtkglext-1.0/gtk/gtkgldebug.h
+  /usr/include/gtkglext-1.0/gtk/gtkgldefs.h
+  /usr/include/gtkglext-1.0/gtk/gtkglinit.h
+  /usr/include/gtkglext-1.0/gtk/gtkglversion.h
+  /usr/include/gtkglext-1.0/gtk/gtkglwidget.h
+  /usr/lib/gtkglext-1.0/include/gdkglext-config.h
+  /usr/lib/libgdkglext-x11-1.0.dll.a
+  /usr/lib/libgdkglext-x11-1.0.la
+  /usr/lib/libgtkglext-x11-1.0.dll.a
+  /usr/lib/libgtkglext-x11-1.0.la
+  /usr/lib/pkgconfig/gdkglext-1.0.pc
+  /usr/lib/pkgconfig/gdkglext-x11-1.0.pc
+  /usr/lib/pkgconfig/gtkglext-1.0.pc
+  /usr/lib/pkgconfig/gtkglext-x11-1.0.pc
+  /usr/share/aclocal/gtkglext-1.0.m4
+
+Files included in the doc package:
+
+  /usr/share/gtk-doc/html/gtkglext/GdkGLExt-API.html
+  /usr/share/gtk-doc/html/gtkglext/GtkGLExt-API.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-building.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglconfig.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglcontext.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkgldrawable.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglfont.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglinit.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglpixmap.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglquery.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglshapes.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkgltokens.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglversion.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglwindow.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglx.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gtkglinit.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gtkglversion.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-gtkglwidget.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext-running.html
+  /usr/share/gtk-doc/html/gtkglext/gtkglext.devhelp
+  /usr/share/gtk-doc/html/gtkglext/home.png
+  /usr/share/gtk-doc/html/gtkglext/index.html
+  /usr/share/gtk-doc/html/gtkglext/index.sgml
+  /usr/share/gtk-doc/html/gtkglext/left.png
+  /usr/share/gtk-doc/html/gtkglext/Overview.html
+  /usr/share/gtk-doc/html/gtkglext/right.png
+  /usr/share/gtk-doc/html/gtkglext/style.css
+  /usr/share/gtk-doc/html/gtkglext/up.png
+
+--------------------
+
+Port Notes:
+
+----- version 1.2.0-1 -----
+Version bump by new upstream maintainer.
+Created separate -devel and -doc packages.
+
+----- version 1.0.6-2 -----
+Routine rebuild and repackage.
+
+----- version 1.0.6-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
