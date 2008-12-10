@@ -1,4 +1,4 @@
-gtkglext-x11
+gtkglext1.0
 -------------------------------------------
 GtkGLExt is an OpenGL extension to GTK.
 
@@ -8,22 +8,28 @@ rendering in GTK. GtkGLExt library provides the GtkWidget API add-ons
 to make GTK+ widgets OpenGL-capable.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  gtk2-x11-runtime-2.6.10-1
-  pango-runtime-1.8.1-1
-  xorg-x11-bin-dlls-6.8.2.0-1
+  cygwin-1.5.25-15
+  libGL1-7.2-2
+  libglib2.0_0-2.18.3-1
+  libGLU1-7.2-2
+  libgtk2.0_0-2.14.5-1
+  libpango1.0_0-1.22.3-1
+  libX11_6-1.1.5-1
+  libXmu6-1.0.4-1
 
 Build requirements:
-  cygwin-1.5.19-4
-  automake2.5-2.59-3
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  gtk-doc-1.3-1
-  libtool1.5-1.5.20-2
+(besides corresponding -devel packages)
+  automake2.5-2.63-1
+  automake1.9-1.9.6-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gnome-common-2.24.0-1
+  gtk-doc-1.11-1
+  libtool-2.2.6a-1
   make-3.80-1
-  pkgconfig-0.17.2-2
+  pkg-config-0.23a-2
   sed-4.1.4-1
 
 Canonical homepage:
@@ -31,41 +37,38 @@ Canonical homepage:
 
 Canonical download:
   ftp://ftp.gnome.org/pub/GNOME/sources/gtkglext/
-  http://prdownloads.sourceforge.net/gtkglext/
+  http://downloads.sourceforge.net/gtkglext/
 
 -------------------------------------------
 
 Build instructions:
-  unpack gtkglext-x11-1.2.0-X-src.tar.bz2
+  unpack gtkglext1.0-1.2.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./gtkglext-1.2.0-X.sh all
+  cygport ./gtkglext1.0-1.2.0-X.cygport all
 
 This will create:
-  /usr/src/gtkglext-x11-1.2.0-X-src.tar.bz2
-  /usr/src/gtkglext-x11-1.2.0-X.tar.bz2
-  /usr/src/gtkglext-x11-devel-1.2.0-X.tar.bz2
-  /usr/src/gtkglext-x11-doc-1.2.0-X.tar.bz2
+  /usr/src/gtkglext1.0-1.2.0-X-src.tar.bz2
+  /usr/src/libgtkglext1.0-devel-1.2.0-X.tar.bz2
+  /usr/src/libgtkglext1.0_0-1.2.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the main package:
+Files included in the binary packages:
 
+(libgtkglext1.0_0)
   /usr/bin/cyggdkglext-x11-1.0-0.dll
   /usr/bin/cyggtkglext-x11-1.0-0.dll
-  /usr/share/doc/Cygwin/gtkglext-x11-1.2.0.README
-  /usr/share/doc/gtkglext-x11-1.2.0/AUTHORS
-  /usr/share/doc/gtkglext-x11-1.2.0/ChangeLog
-  /usr/share/doc/gtkglext-x11-1.2.0/COPYING
-  /usr/share/doc/gtkglext-x11-1.2.0/COPYING.LIB
-  /usr/share/doc/gtkglext-x11-1.2.0/INSTALL
-  /usr/share/doc/gtkglext-x11-1.2.0/NEWS
-  /usr/share/doc/gtkglext-x11-1.2.0/README
-  /usr/share/doc/gtkglext-x11-1.2.0/TODO
+  /usr/share/doc/gtkglext1.0-1.2.0/AUTHORS
+  /usr/share/doc/gtkglext1.0-1.2.0/COPYING
+  /usr/share/doc/gtkglext1.0-1.2.0/COPYING.LIB
+  /usr/share/doc/gtkglext1.0-1.2.0/ChangeLog
+  /usr/share/doc/gtkglext1.0-1.2.0/INSTALL
+  /usr/share/doc/gtkglext1.0-1.2.0/README
+  /usr/share/doc/gtkglext1.0-1.2.0/TODO
 
-Files included in the devel package:
-
+(libgtkglext1.0-devel)
   /usr/include/gtkglext-1.0/gdk/gdkgl.h
   /usr/include/gtkglext-1.0/gdk/gdkglconfig.h
   /usr/include/gtkglext-1.0/gdk/gdkglcontext.h
@@ -107,11 +110,9 @@ Files included in the devel package:
   /usr/lib/pkgconfig/gtkglext-1.0.pc
   /usr/lib/pkgconfig/gtkglext-x11-1.0.pc
   /usr/share/aclocal/gtkglext-1.0.m4
-
-Files included in the doc package:
-
   /usr/share/gtk-doc/html/gtkglext/GdkGLExt-API.html
   /usr/share/gtk-doc/html/gtkglext/GtkGLExt-API.html
+  /usr/share/gtk-doc/html/gtkglext/Overview.html
   /usr/share/gtk-doc/html/gtkglext/gtkglext-building.html
   /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglconfig.html
   /usr/share/gtk-doc/html/gtkglext/gtkglext-gdkglcontext.html
@@ -130,11 +131,11 @@ Files included in the doc package:
   /usr/share/gtk-doc/html/gtkglext/gtkglext-gtkglwidget.html
   /usr/share/gtk-doc/html/gtkglext/gtkglext-running.html
   /usr/share/gtk-doc/html/gtkglext/gtkglext.devhelp
+  /usr/share/gtk-doc/html/gtkglext/gtkglext.devhelp2
   /usr/share/gtk-doc/html/gtkglext/home.png
   /usr/share/gtk-doc/html/gtkglext/index.html
   /usr/share/gtk-doc/html/gtkglext/index.sgml
   /usr/share/gtk-doc/html/gtkglext/left.png
-  /usr/share/gtk-doc/html/gtkglext/Overview.html
   /usr/share/gtk-doc/html/gtkglext/right.png
   /usr/share/gtk-doc/html/gtkglext/style.css
   /usr/share/gtk-doc/html/gtkglext/up.png
@@ -142,6 +143,9 @@ Files included in the doc package:
 --------------------
 
 Port Notes:
+
+----- version 1.2.0-2 -----
+Rebuilt for modular X11.
 
 ----- version 1.2.0-1 -----
 Version bump by new upstream maintainer.

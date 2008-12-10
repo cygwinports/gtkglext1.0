@@ -1,0 +1,15 @@
+ORIG_PN="gtkglext"
+inherit gnome2
+
+DESCRIPTION="GTK+ OpenGL widget"
+HOMEPAGE="http://www.k-3d.org/gtkglext/"
+SRC_URI="mirror://sourceforge/gtkglext/${ORIG_PN}-${PV}.tar.bz2"
+PATCH_URI="1.2.0-examples-Makefile.patch"
+
+PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel"
+libgtkglext1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/"
+libgtkglext1_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/aclocal/ usr/share/gtk-doc/"
+
+DIFF_EXCLUDES="docs *.nsi"
+
+CYGCONF_ARGS="--with-gdktarget=x11"
