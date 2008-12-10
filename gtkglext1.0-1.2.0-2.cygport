@@ -4,7 +4,7 @@ inherit gnome2
 DESCRIPTION="GTK+ OpenGL widget"
 HOMEPAGE="http://www.k-3d.org/gtkglext/"
 SRC_URI="mirror://sourceforge/gtkglext/${ORIG_PN}-${PV}.tar.bz2"
-PATCH_URI="1.2.0-examples-Makefile.patch"
+PATCH_URI="1.2.0-deprecations.patch"
 
 PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel"
 libgtkglext1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/"
