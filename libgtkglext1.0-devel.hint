@@ -1,5 +1,5 @@
 category: Gnome X11
-requires: cygwin libgtkglext1.0_0 libGL-devel libglib2.0-devel libGLU-devel libgtk2.0-devel libpango1.0-devel libX11-devel libXmu-devel
+requires: libgtkglext1.0_0 libGL-devel libglib2.0-devel libGLU-devel libgtk2.0-devel libpango1.0-devel libX11-devel libXmu-devel
 external-source: gtkglext1.0
 sdesc: "OpenGL extension to gtk+-2.0 (development)"
 ldesc: "GtkGLExt is an OpenGL extension to GTK.
