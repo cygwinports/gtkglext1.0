@@ -1,9 +1,0 @@
-category: Gnome X11
-requires: libgcc1 libGL1 libglib2.0_0 libGLU1 libgtk2.0_0 libpango1.0_0 libX11_6 libXmu6
-external-source: gtkglext1.0
-sdesc: "OpenGL extension to gtk+-2.0 (runtime)"
-ldesc: "GtkGLExt is an OpenGL extension to GTK.
-This package is composed of GdkGLExt library and GtkGLExt library.
-GdkGLExt library provides the GDK objects which support OpenGL
-rendering in GTK. GtkGLExt library provides the GtkWidget API add-ons
-to make GTK+ widgets OpenGL-capable."
