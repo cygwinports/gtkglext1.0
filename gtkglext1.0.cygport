@@ -14,9 +14,11 @@ SRC_URI="mirror://sourceforge/gtkglext/gtkglext-${VERSION}.tar.bz2"
 SRC_DIR="gtkglext-${VERSION}"
 PATCH_URI="1.2.0-deprecations.patch"
 
-PKG_NAMES="lib${NAME}_0 lib${NAME}-devel"
+PKG_NAMES="lib${NAME}_0 lib${NAME}-devel lib${NAME}-doc"
 libgtkglext1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/"
-libgtkglext1_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/aclocal/ usr/share/gtk-doc/"
+libgtkglext1_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/aclocal/"
+libgtkglext1_0_doc_CATEGORY="Doc"
+libgtkglext1_0_doc_CONTENTS="usr/share/gtk-doc/"
 
 DIFF_EXCLUDES="docs *.nsi *enumtypes.*"
 
